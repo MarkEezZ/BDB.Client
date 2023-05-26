@@ -1,0 +1,53 @@
+#section_main {
+    background-image: url(/public/assets/main_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#section_main > h2 {
+    font-family: 'Qanelas Bold';
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 4.35rem;
+    width: 60%;
+}
+
+#section_main > .basic_button {
+    width: 32vw;
+    margin-top: 4vh;
+    height: 7vh;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #section_main {
+        background-image: url(/public/assets/main_background_full.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #section_main h2 {
+        color: white;
+        width: 80%;
+    }
+    #section_main .basic_button {
+        box-shadow: 8px 8px 10px #0000004d;
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #section_main h2 {
+        color: white;
+        width: 100%;
+        font-size: 8.75vw;
+        line-height: 12vw;
+    }
+    #section_main .basic_button {
+        box-shadow: 8px 8px 10px #0000004d;
+        font-size: 1.125rem;
+        width: 70%;
+    }
+}

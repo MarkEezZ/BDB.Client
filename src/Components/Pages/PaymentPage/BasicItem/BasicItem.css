@@ -1,0 +1,21 @@
+.basic_item {
+    background-color: #0052B4;
+    color: white;
+    padding: 1.5vw 2vw;
+    padding-bottom: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1vh;
+    flex-grow: 1;
+}
+
+.basic_item h3 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: 'Qanelas Regular';
+}
+
+.basic_item a {
+    color: white;
+}

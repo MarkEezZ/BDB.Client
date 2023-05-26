@@ -1,0 +1,114 @@
+#section_steps {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 2vh;
+}
+
+#section_steps > h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#section_steps > div {
+    display: flex;
+    gap: 4vh;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.steps_grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1vw;
+}
+
+.basic_item_steps_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.basic_item_steps_2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.basic_item_steps_3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.basic_item_steps_4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#section_steps .image_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+    #section_steps > h2 {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #section_steps > h2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #section_steps > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .steps_grid {
+        width: 100%;
+    }
+    #section_steps .image_wrapper {
+        height: 10vh;
+    }
+    #section_steps .image_wrapper > img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #section_steps > h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .steps_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+    .steps_grid > .basic_item {
+        min-height: 20vh;
+        padding: 2vh 4vw;
+    }
+    .steps_grid > .basic_item p {
+        padding: 2vh 0;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #section_steps > h2 {
+        font-size: 1.25rem;
+    }
+}

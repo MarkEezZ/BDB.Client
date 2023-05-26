@@ -1,0 +1,89 @@
+.article-cert {
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+#charity_main_section h2 {
+    text-transform: uppercase;
+    font-size: 3.25rem;
+    margin-bottom: 2vh;
+}
+
+.article-cert > div:not(.carity-image_wrapper) {
+    width: 65%;
+}
+.carity-image_wrapper {
+    display: flex;
+    width: 30%;
+}
+.carity-image_wrapper > img {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+}
+
+#charity_main_section p, #charity_main_section li {
+    font-size: 1.125rem;
+}
+
+.article-goals {
+    margin-top: 6vh;
+}
+
+.article-goals li {
+    list-style-type: "——        ";
+    margin-top: 3vh;
+}
+
+.article-goals li::marker {
+    color: rgb(163, 163, 163);
+    letter-spacing: -3px;
+}
+
+.article-goals ul {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.article-goals > p {
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 1100px) {
+    .article-cert {
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .article-cert > div {
+        width: 100%;
+    }
+    .article-cert > div:not(.carity-image_wrapper) {
+        width: 100%;
+    }
+    .carity-image_wrapper > img {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #charity_main_section .article-cert h2 {
+        font-size: 7.1vw;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #charity_main_section .article-goals h2 {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .carity-image_wrapper > img {
+        width: 100%;
+        height: auto;
+    }
+    #charity_main_section .article-goals h2 {
+        font-size: 10vw;
+    }
+}

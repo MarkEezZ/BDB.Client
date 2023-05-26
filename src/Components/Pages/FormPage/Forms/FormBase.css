@@ -1,0 +1,127 @@
+.form_base {
+    padding: 5vh 3vw;
+    width: 50vw;
+    justify-content: space-between;
+    gap: 3vh;
+    border-radius: 1vh;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form_base h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Qanelas Bold';
+    text-align: center;
+}
+
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75vh;
+}
+
+.input_wrapper p {
+    font-size: 1rem;
+    font-family: 'Qanelas Medium';
+    font-weight: 500;
+    color: rgba(35, 35, 35, 0.4);
+}
+
+.input_wrapper > input, .input_wrapper > textarea {
+    border-radius: 1vh;
+    min-height: 4vh;
+    border: 1px solid rgba(35, 35, 35, 0.486);
+    padding: 0.75rem;
+    font-family: 'Qanelas Medium';
+    font-weight: 500;
+}
+
+.input_wrapper:nth-child(4) {
+    flex-grow: 1;
+}
+.input_wrapper > textarea {
+    flex-grow: 1;
+    resize: vertical;
+    max-height: 35vh;
+    min-height: 10vh;
+}
+
+.form_button {
+    margin: 0 auto;
+    width: 60%;
+    height: 6vh;
+    border: none;
+    font-size: 1rem;
+    background-color: #0052B4;
+    color: white;
+    font-family: "Qanelas Medium";
+    font-weight: 500;
+    border-radius: 0.5em;
+    box-shadow: 8px 8px 20px #0051b44d;
+    white-space: nowrap;
+    transition: 0.1s;
+    cursor: pointer;
+    margin-top: 2vh;
+    user-select: none;
+}
+
+.form_button:hover {
+    background-color: #2e81e6;
+    transition: 0.1s;
+}
+
+.checkbox_wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5vh;
+}
+
+.checkbox_wrapper p {
+    color: rgba(35, 35, 35, 1);
+    font-family: "Qanelas Medium";
+    font-weight: 500;
+    font-size: 0.875rem;
+    width: 90%;
+}
+
+.checkbox_wrapper a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    margin: 2px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    background-color: transparent;
+    background-image: url(/public/assets/checkbox_empty.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.checkbox:checked + label {
+    background-image: url(/public/assets/checkbox_checked.png);
+}
+
+.mini_close_button {
+    position: absolute;
+    top: 2vh;
+    right: 3vw;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    background-image: url(/public/assets/close_icon_small_thin.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

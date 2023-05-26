@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Qanelas Bold";
+  src: url("/public/fonts/Qanelas-Bold.woff") format("woff"),
+      url("/public/fonts/Qanelas-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Qanelas Medium";
+  src: url("/public/fonts/Qanelas-Medium.woff") format("woff"),
+      url("/public/fonts/Qanelas-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Qanelas Regular";
+  src: url("/public/fonts/Qanelas-Regular.woff") format("woff"),
+      url("/public/fonts/Qanelas-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Stapel";
+  src: url("/public/fonts/Stapel-Light.woff") format("woff"),
+      url("/public/fonts/Stapel-Light.woff2") format("woff2");
+}
+
+html, body {
+  background-color: #F5F5F5;
+  margin: 0;
+  font-size: 16px;
+  color: #232323;
+  font-family: "Qanelas Regular";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Qanelas Bold';
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+a {
+  color: #232323;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:not(header a) {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgba(0, 82, 180, 1);
+}
+
+section {
+  padding: 10vh 15%;
+}
+
+h1 > span, h2 > span, h3 > span {
+  color: rgba(0, 82, 180, 1);
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+main {
+  padding-top: 14vh;
+}
+
+@media screen and (max-width: 1600px) {
+  section {
+    padding: 8vh 10%;
+  }
+}

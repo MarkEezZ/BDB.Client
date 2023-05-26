@@ -1,0 +1,25 @@
+.card {
+    background-color: #0052B4;
+    color: white;
+    font-family: "Qanelas Regular";
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 0.6em;
+    box-shadow: 8px 8px 20px #003e8a9c;
+    padding: 2vh 1.5vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.card img {
+    margin-bottom: 0.5vh;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 590px) {
+    .card {
+        padding: 2vh 3vw;
+    }
+}

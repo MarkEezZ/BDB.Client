@@ -1,0 +1,83 @@
+#section_benefactors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    padding-top: 2vh;
+}
+
+#section_benefactors h2 {
+    text-transform: uppercase;
+    font-size: 2.875rem;
+}
+
+.benefactors_wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.pagination_wrapper {
+    display: flex;
+    gap: 3vh;
+}
+
+.pagination_wrapper > button {
+    width: 4vh;
+    height: 4vh;
+    background-color:rgba(240, 248, 255, 0);
+}
+
+.button-left {
+    background-image: url(/public/assets/pagination/left_gray.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button-left:hover {
+    background-image: url(/public/assets/pagination/left_blue.png);
+}
+
+.button-right {
+    background-image: url(/public/assets/pagination/right_gray.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button-right:hover {
+    background-image: url(/public/assets/pagination/right_blue.png);
+}
+
+#section_benefactors > .basic_button {
+    width: 30vh;
+    height: 7vh;
+    border-radius: 1.4vh;
+    font-size: 1.25rem;
+    margin-top: 1.5vh;
+}
+
+@media screen and (max-width: 780px) {
+    .benefactors_wrapper {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #section_benefactors h2 {
+        font-size: 9.2vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    #section_benefactors .basic_button {
+        font-size: 1.125rem;
+        width: 100%;
+        min-width: 0;
+    }
+}
+@media screen and (max-width: 200px) {
+    #section_benefactors .basic_button {
+        font-size: 9vw;
+    }
+}

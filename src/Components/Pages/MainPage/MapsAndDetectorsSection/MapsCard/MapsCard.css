@@ -1,0 +1,25 @@
+.maps_card {
+    background-color: rgba(35, 35, 35, 1);
+    display: flex;
+    gap: 2vw;
+    padding: 2vh 4vw;
+    border-radius: 1.5vh;
+    align-items: center;
+}
+
+.maps_card a {
+    color: white;
+}
+
+.maps_card a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 840px) {
+    .maps_card {
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,39 @@
+#section_additional_info h2{
+    margin-bottom: 4vh;
+}
+
+.info_items_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.info_items_wrapper > div {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.info_items_wrapper > div > p {
+    width: 100%;
+    font-size: 1.125rem;
+}
+
+.dash {
+    width: 30px;
+    height: 1px;
+    background-color: rgb(77, 77, 77);
+}
+
+@media screen and (max-width: 660px) {
+    #section_additional_info h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #section_additional_info h2 {
+        font-size: 9vw;
+        line-height: 9vw;
+    }
+}

@@ -1,0 +1,35 @@
+.admin_section {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 6vh 7%;
+    align-items: center;
+}
+
+.admin_section h3 {
+ font-size: 1.25rem;
+}
+
+.admin_section .form_button {
+    margin: 0;
+    width: 150px;
+    height: 4vh;
+    box-shadow: none;
+}
+.action_wrapper {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+.admin_section:not(#fines_manage_section, #gratitudes_manage_section) tbody td {
+    width: 50%;
+}
+
+.admin_section .input_wrapper {
+    flex-direction: row;
+}
+
+.admin_section .input_wrapper > *{
+    flex-grow: 1;
+}

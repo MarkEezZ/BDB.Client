@@ -1,0 +1,44 @@
+#subscription_section > p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#subscription_section > div {
+    display: flex;
+    gap: 3vh;
+    margin-top: 3vh;
+}
+
+#subscription_section > div > div {
+    min-height: 20vh;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 500px) {
+    #subscription_section > p {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #subscription_section > div {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 4vh;
+        width: 80%;
+    }
+    #subscription_section > div > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #subscription_section > div {
+        width: 100%;
+    }
+    #subscription_section .basic_item p {
+        padding: 1vh 4vw;
+        text-align: left;
+    }
+}

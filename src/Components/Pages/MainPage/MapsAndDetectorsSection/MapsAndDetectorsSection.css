@@ -1,0 +1,44 @@
+#section_maps_and_detectors {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+#section_maps_and_detectors > div {
+    display: flex;
+    gap: 4vh;
+}
+
+#section_maps_and_detectors h2 {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+#section_maps_and_detectors > p {
+    width: 30%;
+    font-family: 'Qanelas Medium';
+    font-size: 1.125rem;
+    margin-left: auto;
+    text-align: right;
+}
+
+@media screen and (max-width: 840px) {
+    #section_maps_and_detectors > div {
+        flex-direction: column;
+    }
+    #section_maps_and_detectors > p {
+        margin: auto;
+        margin-top: 2vh;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #section_maps_and_detectors h2 {
+        font-size: 8.75vw;
+        line-height: 12vw;
+    }
+}

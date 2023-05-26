@@ -1,0 +1,29 @@
+#section_about_main h2 {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+}
+
+#section_about_main h3 {
+    text-transform: uppercase;
+    font-family: "Qanelas Bold";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 4vh;
+}
+
+#section_about_main p {
+    font-family: "Qanelas Regular";
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 2vh 0;
+    color: rgba(35, 35, 35, 1);
+}
+
+@media screen and (max-width: 520px) {
+    #section_about_main h2 {
+        width: 100%;
+        font-size: 11vw;
+        line-height: 12.5vw;
+    }
+}

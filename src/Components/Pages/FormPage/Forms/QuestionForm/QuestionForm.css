@@ -1,0 +1,19 @@
+#form_question h3 {
+    font-size: 1.5rem;
+}
+
+#form_question .input_wrapper > input, .input_wrapper > p {
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 700px) {
+    #form_question {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #form_question {
+        width: 80%;
+    }
+}

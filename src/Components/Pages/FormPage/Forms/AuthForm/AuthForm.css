@@ -1,0 +1,18 @@
+#auth_form {
+    width: 50%;
+    margin: auto;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.171);
+}
+
+@media screen and (max-width: 880px) {
+    #auth_form {
+        width: 80%;
+        padding: 5vh 6vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #auth_form {
+        width: 100%;
+    }
+}

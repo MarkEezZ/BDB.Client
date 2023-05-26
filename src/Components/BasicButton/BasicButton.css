@@ -1,0 +1,19 @@
+.basic_button {
+    background-color: #0052B4;
+    color: white;
+    font-family: "Qanelas Medium";
+    font-weight: 500;
+    border-radius: 0.5em;
+    box-shadow: 8px 8px 20px #0051b44d;
+    padding: 0 3vw;
+    width: 14vw;
+    min-width: 160px;
+    transition: 0.1s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.basic_button:hover {
+    background-color: #2e81e6;
+    transition: 0.1s;
+}

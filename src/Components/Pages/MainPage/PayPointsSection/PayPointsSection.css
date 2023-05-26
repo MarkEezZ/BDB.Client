@@ -1,0 +1,26 @@
+#section_paypoints {
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+    padding: 8vh 15%;
+    background-color: rgba(0, 82, 180);
+}
+
+#section_paypoints h2 {
+    width: 100%;
+    color: white;
+}
+
+#section_paypoints p {
+    font-family: 'Qanelas Medium';
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: white;
+}
+
+@media screen and (max-width: 790px) {
+    #section_paypoints {
+        flex-direction: column;
+        gap: 4vh;
+    }
+}

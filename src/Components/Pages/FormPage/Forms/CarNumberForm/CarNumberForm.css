@@ -1,0 +1,68 @@
+#form_car_number {
+    gap: 3vh;
+}
+
+.mini_close_button:hover {
+    background-image: url(/public/assets/close_icon_small_fat.png);
+    cursor: pointer;
+}
+
+#form_car_number .input_wrapper input {
+    font-size: 1.125rem;
+    border-radius: 0.875rem;
+    width: 16vw;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+#form_car_number .form_button {
+    border-radius: 0.875rem;
+}
+
+.fines_table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+.fines_table td, .fines_table th {
+    padding: 1vh 0;
+    border: 1px solid rgb(0, 115, 255);
+}
+
+.fines_table th {
+    font-weight: 400;
+    font-family: 'Qanelas Regular';
+}
+
+#form_car_number .input_wrapper > input, .input_wrapper > textarea {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+    #form_car_number {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #form_car_number .input_wrapper input {
+        width: 32vw;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #form_car_number {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #form_car_number .input_wrapper input {
+        width: 50vw;
+    }
+    .fines_table {
+        font-size: 0.75rem;
+    }
+}

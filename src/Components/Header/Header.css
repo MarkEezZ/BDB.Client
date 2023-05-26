@@ -1,0 +1,162 @@
+header {
+    position: fixed;
+    top: 0;
+    padding: 0 10%;
+    min-height: 14vh;
+    width: 100%;
+    border-bottom: 0.5px #0063db solid;
+    background-color: white;
+    display: flex;
+    gap: 4vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: "Stapel";
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 260px;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+header nav > * {
+    white-space: nowrap;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+}
+
+header .basic_button {
+    min-height: 4vh;
+    padding: 1vh 1vw;
+}
+
+header > aside {
+    position: fixed;
+    top: 14vh;
+    right: -40vh;
+    width: 40vw;
+    height: 100%;
+    border-left: 1px solid #0063db;
+    background-color: white;
+    transition: 0.2s;
+    display: none;
+}
+
+header > aside > nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+header > aside > nav > * {
+    padding: 1vh 3vw;
+    transition: 0.2s;
+}
+
+header > aside > nav > *:hover {
+    background-color: #0063db;
+    color: white;
+    transition: 0.2s;
+}
+
+#burger_menu_checkbox {
+    display: none;
+}
+
+#burger_menu_checkbox + label {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    background-image:  url(/public/assets/burger_menu_icon_black.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(0.12);
+    transition: 0.2s;
+    flex-shrink: 0;
+}
+
+#burger_menu_checkbox + label:hover {
+    filter: invert(0.2);
+    transition: 0.2s;
+}
+
+#burger_menu_checkbox:checked + label {
+    background-image: url(/public/assets/burger_menu_icon_blue.png);
+    filter: invert(0);
+}
+
+#burger_menu_checkbox:checked ~ aside {
+    right: 0;
+    transition: 0.2s;
+}
+
+.admin_buttons_wrapper {
+    position: fixed;
+    z-index: 2;
+    bottom: 4vh;
+    right: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.admin_buttons_wrapper > .basic_button {
+    box-shadow: none;
+    height: 6vh;
+    border-radius: 4vh;
+    width: 8vh;
+    background-color: #111111;
+}
+
+.admin_buttons_wrapper > .basic_button:hover {
+    background-color: #363636;
+}
+
+@media screen and (max-width: 1200px) {
+    header .basic_button {
+        display: none;
+    }
+    #section_main {
+        background-image: url(/public/assets/main_background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    header .basic_button {
+        display: none;
+    }
+    header > nav {
+        display: none;
+    }
+    #burger_menu_checkbox + label {
+        display: flex;
+    }
+    header > aside {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header > aside {
+        right: -70vh;
+        width: 70vw;
+    }
+}
